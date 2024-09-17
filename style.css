@@ -308,6 +308,45 @@ header nav ul li a {
     background-color: #0056b3;
 }
 
+/* Responsiveness */
+@media (max-width: 768px) {
+    .contact-option {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-contact,
+.footer-social {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-contact h3,
+.footer-social h3 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
 
 /* Social Icons */
 .social-icons {
@@ -519,29 +558,4 @@ footer p {
     .about-text p {
         font-size: 1rem;
     }
-}
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.footer-contact,
-.footer-social {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.footer-contact h3,
-.footer-social h3 {
-    font-size: 1.4em;
-    margin-bottom: 20px;
 }
