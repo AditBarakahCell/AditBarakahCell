@@ -255,77 +255,59 @@ header nav ul li a {
     color: #666;
 }
 
+/* Contact Options Styling */
 .contact-options {
     display: flex;
-    justify-content: space-around;
-    padding: 60px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .contact-option {
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    padding: 20px;
+    background-color: #f9f9f9;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     text-align: center;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.contact-option:hover {
+    transform: scale(1.05);
 }
 
 .contact-option i {
-    font-size: 3em;
-    color: #004bff;
-    margin-bottom: 20px;
+    font-size: 50px;
+    color: #0d6efd;
+    margin-bottom: 10px;
 }
 
 .contact-option h3 {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 15px;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .contact-option p {
-    font-size: 1em;
-    color: #666;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
-.contact-option .cta-button {
-    background-color: #004bff;
+.cta-button {
+    background-color: #0d6efd;
     color: white;
     padding: 10px 20px;
-    text-decoration: none;
     border-radius: 5px;
-    font-size: 1.1em;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
-.contact-option .cta-button:hover {
-    background-color: #003bbf;
+.cta-button:hover {
+    background-color: #0056b3;
 }
 
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.footer-contact,
-.footer-social {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.footer-contact h3,
-.footer-social h3 {
-    font-size: 1.4em;
-    margin-bottom: 20px;
-}
 
 /* Social Icons */
 .social-icons {
