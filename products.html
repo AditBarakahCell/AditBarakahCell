@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk Kami</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo Perusahaan" />
+            <span>AditBarakahCell</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Produk</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="products">
+        <div class="container">
+            <h1>Produk Kami</h1>
+            <div class="product-grid">
+                <!-- Produk 1 -->
+                <div class="product-item">
+                    <div class="product-images">
+                        <img id="product1-main" src="assets/img/product1-1.jpg" alt="Produk 1">
+                        <div class="image-thumbnails">
+                            <img src="assets/img/product1-1.jpg" alt="Produk 1 - 1" onclick="changeImage('product1-main', 'assets/img/product1-1.jpg')">
+                            <img src="assets/img/product1-2.jpg" alt="Produk 1 - 2" onclick="changeImage('product1-main', 'assets/img/product1-2.jpg')">
+                            <img src="assets/img/product1-3.jpg" alt="Produk 1 - 3" onclick="changeImage('product1-main', 'assets/img/product1-3.jpg')">
+                        </div>
+                    </div>
+                    <h2>Nama Produk 1</h2>
+                    <p class="price">Rp 1.000.000</p>
+                    <p>Deskripsi singkat produk 1.</p>
+                    <div class="buy-links">
+                        <a href="https://www.tokopedia.com" target="_blank">
+                            <i class="fas fa-shopping-cart"></i> Beli di Tokopedia
+                        </a>
+                        <a href="https://www.shopee.co.id" target="_blank">
+                            <i class="fas fa-shopping-cart"></i> Beli di Shopee
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Produk 2 -->
+                <div class="product-item">
+                    <div class="product-images">
+                        <img id="product2-main" src="assets/img/product2-1.jpg" alt="Produk 2">
+                        <div class="image-thumbnails">
+                            <img src="assets/img/product2-1.jpg" alt="Produk 2 - 1" onclick="changeImage('product2-main', 'assets/img/product2-1.jpg')">
+                            <img src="assets/img/product2-2.jpg" alt="Produk 2 - 2" onclick="changeImage('product2-main', 'assets/img/product2-2.jpg')">
+                            <img src="assets/img/product2-3.jpg" alt="Produk 2 - 3" onclick="changeImage('product2-main', 'assets/img/product2-3.jpg')">
+                        </div>
+                    </div>
+                    <h2>Nama Produk 2</h2>
+                    <p class="price">Rp 2.000.000</p>
+                    <p>Deskripsi singkat produk 2.</p>
+                    <div class="buy-links">
+                        <a href="https://www.tokopedia.com" target="_blank">
+                            <i class="fas fa-shopping-cart"></i> Beli di Tokopedia
+                        </a>
+                        <a href="https://www.shopee.co.id" target="_blank">
+                            <i class="fas fa-shopping-cart"></i> Beli di Shopee
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Produk 3 -->
+                <div class="product-item">
+                    <div class="product-images">
+                        <img id="product3-main" src="assets/img/product3-1.jpg" alt="Produk 3">
+                        <div class="image-thumbnails">
+                            <img src="assets/img/product3-1.jpg" alt="Produk 3 - 1" onclick="changeImage('product3-main', 'assets/img/product3-1.jpg')">
+                            <img src="assets/img/product3-2.jpg" alt="Produk 3 - 2" onclick="changeImage('product3-main', 'assets/img/product3-2.jpg')">
+                            <img src="assets/img/product3-3.jpg" alt="Produk 3 - 3" onclick="changeImage('product3-main', 'assets/img/product3-3.jpg')">
+                        </div>
+                    </div>
+                    <h2>Nama Produk 3</h2>
+                    <p class="price">Rp 3.000.000</p>
+                    <p>Deskripsi singkat produk 3.</p>
+                    <div class="buy-links">
+                        <a href="https://www.tokopedia.com" target="_blank">
+                            <i class="fas fa-shopping-cart"></i> Beli di Tokopedia
+                        </a>
+                        <a href="https://www.shopee.co.id" target="_blank">
+                            <i class="fas fa-shopping-cart"></i> Beli di Shopee
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Produk 4 -->
+                <div class="product-item">
+                    <div class="product-images">
+                        <img id="product4-main" src="assets/img/product4-1.jpg" alt="Produk 4">
+                        <div class="image-thumbnails">
+                            <img src="assets/img/product4-1.jpg" alt="Produk 4 - 1" onclick="changeImage('product4-main', 'assets/img/product4-1.jpg')">
+                            <img src="assets/img/product4-2.jpg" alt="Produk 4 - 2" onclick="changeImage('product4-main', 'assets/img/product4-2.jpg')">
+                            <img src="assets/img/product4-3.jpg" alt="Produk 4 - 3" onclick="changeImage('product4-main', 'assets/img/product4-3.jpg')">
+                        </div>
+                    </div>
+                    <h2>Nama Produk 4</h2>
+                    <p class="price">Rp 4.000.000</p>
+                    <p>Deskripsi singkat produk 4.</p>
+                    <div class="buy-links">
+                        <a href="https://www.tokopedia.com" target="_blank">
+                            <i class="fas fa-shopping-cart"></i> Beli di Tokopedia
+                        </a>
+                        <a href="https://www.shopee.co.id" target="_blank">
+                            <i class="fas fa-shopping-cart"></i> Beli di Shopee
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AditBarakahCell. All rights reserved. Reo.J.S</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
